@@ -39,19 +39,19 @@ CSV-файлы должны содержать колонки: `student`, `date`
 ## Примеры работы
 
 ### Основной функционал
-![Запуск с тремя файлами](screenshots/screenshot1.png)
+![Запуск с тремя файлами](https://drive.google.com/uc?export=view&id=1EnzL5lmbgyI5lIvMgbfo5wQDhwV3_erA)
 
 ### Тестирование
-![Запуск тестов](screenshots/screenshot2.png)
+![Запуск тестов](https://drive.google.com/uc?export=view&id=1AQZQwbPXMQybicTQ8HAoSrZEzj8Kev_Z)
 
 ### Покрытие тестами
-![Покрытие кода](screenshots/screenshot3.png)
+![Покрытие кода](https://drive.google.com/uc?export=view&id=1UErl3JoEX56yOtcDDQB7Kng497aehAXh)
 
 ### Обработка ошибок
-![Обработка ошибки: файл не найден](screenshots/screenshot4.png)
+![Обработка ошибки: файл не найден](https://drive.google.com/uc?export=view&id=1mJjAtpH7XKD5MQiu7ZZ4mKo6EELP_KcB))
 
 ### Валидация типа отчёта
-![Валидация: неизвестный тип отчёта через argparse choices](screenshots/screenshot5.png)
+![Валидация: неизвестный тип отчёта через argparse choices](https://drive.google.com/uc?export=view&id=1Gat51YmS5SpROcv3HVsq-Bsr_lamZ_cH)
 
 ## Линтер и форматирование
 
