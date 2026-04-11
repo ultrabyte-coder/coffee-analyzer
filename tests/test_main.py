@@ -14,7 +14,6 @@ def _run_cli(args: list[str]) -> subprocess.CompletedProcess:
 
 
 def test_successful_run(tmp_path):
-    """Успешный запуск с CSV-файлом — таблица в stdout."""
     csv_file = tmp_path / "test.csv"
     csv_file.write_text(
         "student,date,coffee_spent,sleep_hours,study_hours,mood,exam\n"
@@ -33,7 +32,6 @@ def test_successful_run(tmp_path):
 
 
 def test_nonexistent_file():
-    """Несуществующий файл — ошибка и exit code 1."""
     result = _run_cli(["--files", "nonexistent.csv", "--report", "median-coffee"])
 
     assert result.returncode == 1
@@ -41,9 +39,7 @@ def test_nonexistent_file():
 
 
 def test_unknown_report_type():
-    """Неизвестный тип отчёта — ошибка и exit code 1."""
     result = _run_cli(["--files", "math.csv", "--report", "unknown-report"])
 
-    assert result.returncode == 1
-    assert "unknown-report" in result.stderr
-    assert "неизвестный тип отчёта" in result.stderr
+    assert result.returncode == 2
+    assert "invalid choice" in result.stderr
